@@ -1,0 +1,27 @@
+{
+  "name": "shopify-app-template-node",
+  "version": "1.0.0",
+  "private": true,
+  "license": "UNLICENSED",
+  "scripts": {
+    "debug": "node --inspect-brk index.js",
+    "dev": "cross-env NODE_ENV=development nodemon index.js --ignore ./frontend",
+    "serve": "cross-env NODE_ENV=production node index.js"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=14.13.1"
+  },
+  "dependencies": {
+    "@shopify/shopify-app-express": "^2.2.2",
+    "@shopify/shopify-app-session-storage-sqlite": "^1.2.7",
+    "compression": "^1.7.4",
+    "cross-env": "^7.0.3",
+    "serve-static": "^1.15.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "prettier": "^3.0.3",
+    "pretty-quick": "^3.1.3"
+  }
+}
